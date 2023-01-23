@@ -1,6 +1,47 @@
+@use '../styles/partials/_variables' as *
 @import '../../node_modules/bootstrap/scss/bootstrap'
 
 *
   box-sizing: border-box
   padding: 0
   margin: 0  
+
+.cursor-pointer
+  cursor: pointer
+
+a
+  color: black
+  text-decoration: none
+
+.button-round
+  padding: 15px 40px
+  border: none
+  border-radius: 80px
+  background-image: linear-gradient(to right, $green-1, $green-2)
+  overflow: hidden
+  box-shadow: none
+  position: relative
+  z-index: 1
+  transition:         0.08s ease-in
+  -o-transition:      0.08s ease-in
+  -ms-transition:     0.08s ease-in
+  -moz-transition:    0.08s ease-in
+  -webkit-transition: 0.08s ease-in
+
+  &:before 
+    border-radius: 50%
+    content: ""
+    position: absolute
+    background-image: linear-gradient(to right, $black-1, black)
+    bottom: 50%
+    left: 52%
+    right: 52%
+    top: 50%
+    z-index: -1
+    -webkit-transition: all .25s ease-out
+
+  &:hover:before 
+    top: -30px
+    bottom: -30px
+    right: 0
+    left: 0  

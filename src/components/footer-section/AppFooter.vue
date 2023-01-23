@@ -1,18 +1,21 @@
 <script>
 
 export default {
-  name: 'AppMain',
+  name: 'AppFooter',
   data(){
     return{
+      
     }
   }
 }
 </script>
 <template>
-  <main>
-    
-  </main>
+  <footer>
+   
+  </footer>
 </template>
 <style lang="sass" scoped>
-  
+  @use '../../styles/partials/_variables' as *
+
+
 </style>
