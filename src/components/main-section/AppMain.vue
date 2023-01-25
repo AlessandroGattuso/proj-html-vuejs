@@ -2,12 +2,14 @@
 
 import Slider from './sections/slider-section/Slider.vue'
 import ProsInfo from './sections/pros-section/ProsInfo.vue'
+import AboutUs from './sections/about-us-section/AboutUs.vue'
 
 export default {
   name: 'AppMain',
   components:{
     Slider,
-    ProsInfo
+    ProsInfo,
+    AboutUs
   }
 }
 </script>
@@ -15,6 +17,7 @@ export default {
   <main>
     <Slider />
     <ProsInfo />
+    <AboutUs />
   </main>
 </template>
 <style lang="sass">
