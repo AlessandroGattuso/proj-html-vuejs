@@ -91,11 +91,11 @@ export default {
     background-color: $black-2
     color: $white-2
     overflow: hidden
-    box-shadow: 3px 3px 15px $black-2
+    box-shadow: 3px 3px 6px rgba($black-2, 0.25)
     transition: all .3s ease-in
     &:hover
       color: white
-      box-shadow: 3px 3px 15px $green-2
+      box-shadow: 3px 3px 10px $green-2
       background-color: $green-2
       padding: 12.5px 35px 12.5px 35px
 
