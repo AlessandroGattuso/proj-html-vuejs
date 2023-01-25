@@ -4,7 +4,7 @@ export default {
 }
 </script>
 <template>
-  <div class="container-fluid pt-200">
+  <div class="container-fluid pt-200 d-flex justify-content-between">
     <div class="col-4 pt-5 d-flex flex-column gap-4 ps-3 gap-5">
       <h1>
         We Are Here To Make Your
@@ -18,11 +18,52 @@ export default {
         <button class="green-black-hover-button text-white">VIEW ALL</button>
       </div>
     </div>
-    <div class="col-5"></div>
+    <div class="h-75 col-7 d-flex justify-content-between gap flex-wrap">
+      <div class="card p-4">
+        <div class="card-body d-flex flex-column gap-4">
+          <h2 class="icon">
+            <font-awesome-icon class="cursor-pointer" icon="fa-solid fa-gauge-high"/>
+          </h2>
+          <h2>Speed Optimization</h2>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia Separated...</p>
+        </div>
+      </div>
+      <div class="card p-4">
+        <div class="card-body d-flex flex-column gap-4">
+          <h2 class="icon">
+            <font-awesome-icon class="cursor-pointer" icon="fa-solid fa-cloud"/>
+          </h2>
+          <h2>Cloud Solutions</h2>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia Separated...</p>
+        </div>
+      </div>
+      <div class="card p-4">
+        <div class="card-body d-flex flex-column gap-4">
+          <h2 class="icon">
+            <font-awesome-icon class="cursor-pointer" icon="fa-solid fa-cloud"/>
+          </h2>
+          <h2>Website Design</h2>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia Separated...</p>
+        </div>
+      </div>
+      <div class="card p-4">
+        <div class="card-body d-flex flex-column gap-4">
+          <h2 class="icon">
+            <font-awesome-icon class="cursor-pointer" icon="fa-solid fa-stopwatch"/>
+          </h2>
+          <h2>Online Marketing</h2>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia Separated...</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <style lang="sass" scoped>
   @use '../../../../styles/partials/variables' as *
+
+  .container-fluid
+    height: 1200px
+      
   h1 
     font-size: 60px
     line-height: 120%
@@ -34,4 +75,32 @@ export default {
 
   button
     padding: 15px 30px
+
+  .card
+    width: 21rem
+    border: none
+    border-radius: 20px
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2)
+    background: transparent
+    transition: all .3s
+
+    &:hover,
+    &:hover .icon,
+    &:hover p
+      color: white
+    &:hover 
+      background-image: linear-gradient(to right, $green-1, $green-2)
+    
+
+  .icon
+    font-size: 60px
+    color: $green-2
+    transition: all .3s
+  
+  .gap
+    gap: 30px 0px
+
+  p
+    color: $grey-1
+    transition: all .3s
 </style>
