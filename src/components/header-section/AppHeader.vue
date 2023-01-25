@@ -21,5 +21,7 @@ export default {
 <style lang="sass" scoped>
   @use '../../styles/partials/_variables' as *
 
-
+  header
+    position: fixed
+    z-index: 10
 </style>

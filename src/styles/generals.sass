@@ -1,11 +1,13 @@
 @use '../styles/partials/_variables' as *
+@use '../styles/partials/_mixins' as *
 @import '../../node_modules/bootstrap/scss/bootstrap'
 
 *
   box-sizing: border-box
   padding: 0
-  margin: 0  
-
+  margin: 0 
+  @include quicksand-font
+   
 .cursor-pointer
   cursor: pointer
 
@@ -13,7 +15,10 @@ a
   color: black
   text-decoration: none
 
-.button-round
+.button-container
+  width: 140px
+
+.green-black-hover-button
   padding: 15px 40px
   border: none
   border-radius: 80px
@@ -38,10 +43,13 @@ a
     right: 52%
     top: 50%
     z-index: -1
-    -webkit-transition: all .25s ease-out
+    -webkit-transition: all .3s ease-in
 
   &:hover:before 
     top: -30px
     bottom: -30px
     right: 0
     left: 0  
+
+.pt-200
+  padding-top: 200px
