@@ -5,6 +5,7 @@ import ProsInfo from './sections/pros-section/ProsInfo.vue'
 import AboutUs from './sections/about-us-section/AboutUs.vue'
 import ProjectExample from './sections/project-example-section/project-example.vue'
 import dataInfo from './sections/data-info-section/dataInfo.vue'
+import support from './sections/support-section/support.vue'
 
 export default {
   name: 'AppMain',
@@ -13,7 +14,8 @@ export default {
     ProsInfo,
     AboutUs,
     ProjectExample,
-    dataInfo
+    dataInfo,
+    support
   }
 }
 </script>
@@ -24,6 +26,7 @@ export default {
     <AboutUs />
     <ProjectExample />
     <dataInfo/>
+    <support/>
   </main>
 </template>
 <style lang="sass">

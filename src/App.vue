@@ -36,6 +36,32 @@
             name: 'contact',
             url: '#'
           }
+        ],
+        linksFooter: [
+          {
+            name: 'Careers',
+            url: '#'
+          },
+          {
+            name: 'News',
+            url: '#'
+          },
+          {
+            name: 'Terms of use',
+            url: '#'
+          },
+          {
+            name: 'Privacy Projects',
+            url: '#'
+          },
+          {
+            name: 'About',
+            url: '#'
+          },
+          {
+            name: 'Contact',
+            url: '#'
+          }
         ]
       }
     },
@@ -47,7 +73,7 @@
 <template>
   <AppHeader :linksHeader="linksHeader" />
   <AppMain/>
-  <AppFooter/>
+  <AppFooter :linksFooter="linksFooter"/>
 </template>
 
 <style lang="sass">

@@ -8,7 +8,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faPhone, faMagnifyingGlass, faCaretRight, faCaretLeft, faGaugeHigh, faCloud, faStopwatch } from '@fortawesome/free-solid-svg-icons'
+import { faPhone, faMagnifyingGlass, faCaretRight, faCaretLeft, faGaugeHigh, faCloud, faStopwatch, faCheck } from '@fortawesome/free-solid-svg-icons'
 import { faPinterestP, faTwitter, faFacebookF } from '@fortawesome/free-brands-svg-icons'
 
 /* add icons to the library */
@@ -22,7 +22,8 @@ library.add(
   faCaretLeft,
   faGaugeHigh,
   faCloud,
-  faStopwatch
+  faStopwatch,
+  faCheck
 )
 
 createApp(App)

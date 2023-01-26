@@ -12,7 +12,7 @@ export default {
     <img class="image-over" src="../../../../../public/images/businesswoman-analysing-document-P8WSNMC-1024x820.jpg" alt="Image not found">
   </div>
   <div class="col-6 text-container">
-    <div class="col-4 pt-5 d-flex flex-column gap-3 ps-3 gap-5">
+    <div class="col-4 pt-5 d-flex flex-column gap-5 ps-3">
       <h1>
         learn more about our
         <span>missions</span>
