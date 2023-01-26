@@ -20,7 +20,7 @@ export default {
       </div>
       <img decoding="async" src="https://demo.phlox.pro/business-2/wp-content/uploads/sites/57/2022/04/divider.svg" alt="" class="divider" style="width: 83px; height: 7px; left: 0px; top: 0px;" />
     </div>
-    <div class="d-flex flex-wrap mt-5 pb-5">
+    <div class="d-flex flex-wrap mt-5 pb-5 justify-content-between gap-1">
       <div class="image-container">
         <img src="../../../../../public/images/ina-soulis-227104-unsplash-1024x1024.jpg" alt="image not found">
         <div class="green-background"></div>
@@ -81,7 +81,7 @@ export default {
 
   .image-container
     position: relative
-    width: 312px
+    width: 310px
     transition: transform .5s
     &:hover
       z-index: 2
@@ -89,6 +89,7 @@ export default {
 
   img 
     width: 100%
+    border-radius: 10px
 
   .green-background
     opacity: 0
@@ -98,7 +99,7 @@ export default {
     top: 0
     background: linear-gradient(to right, rgba($green-1, 0.7), rgba($green-2, 0.7))
     transition: opacity .5s
+    border-radius: 10px
     &:hover
       opacity: 1
-
 </style>

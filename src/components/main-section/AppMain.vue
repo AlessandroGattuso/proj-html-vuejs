@@ -4,6 +4,7 @@ import Slider from './sections/slider-section/Slider.vue'
 import ProsInfo from './sections/pros-section/ProsInfo.vue'
 import AboutUs from './sections/about-us-section/AboutUs.vue'
 import ProjectExample from './sections/project-example-section/project-example.vue'
+import dataInfo from './sections/data-info-section/dataInfo.vue'
 
 export default {
   name: 'AppMain',
@@ -11,7 +12,8 @@ export default {
     Slider,
     ProsInfo,
     AboutUs,
-    ProjectExample
+    ProjectExample,
+    dataInfo
   }
 }
 </script>
@@ -21,6 +23,7 @@ export default {
     <ProsInfo />
     <AboutUs />
     <ProjectExample />
+    <dataInfo/>
   </main>
 </template>
 <style lang="sass">
