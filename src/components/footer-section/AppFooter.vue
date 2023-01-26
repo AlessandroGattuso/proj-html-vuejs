@@ -8,7 +8,8 @@ export default {
 }
 </script>
 <template>
-  <footer class="pt-200 container">
+  <footer>
+    <div class="container pt-200">
       <div class="row">
         <div class="col-3 d-flex flex-column gap-4">
           <img src="../../../public/images/cropped-Group-39-2x.png" alt="">
@@ -44,6 +45,15 @@ export default {
           <img src="../../../public/images/map.png" alt="Map not found">
         </div>
       </div>
+    </div>
+      <div class="container-fluid black-background d-flex align-items-center justify-content-between">
+       <span class="ms-4">© 2023 PHLOX BUSINESS THEME.</span>
+       <div class="d-flex gap-4 me-5">
+         <font-awesome-icon class="cursor-pointer" icon="fa-brands fa-facebook-f"/>
+         <font-awesome-icon class="cursor-pointer" icon="fa-brands fa-twitter"/>
+         <font-awesome-icon class="cursor-pointer" icon="fa-brands fa-pinterest-p"/>
+      </div>
+      </div>
   </footer>
 </template>
 <style lang="sass" scoped>
@@ -63,4 +73,9 @@ export default {
       color: $grey-1
       &:hover
         color: $green-2
+  
+  .black-background
+    color: $grey-1
+    height: 100px
+    background: linear-gradient(to right, $black-1, $black-2)
 </style>

@@ -12,9 +12,9 @@ export default {
         <span class="ms-4">88455438</span>
       </div>
       <div class="d-flex gap-4">
-        <font-awesome-icon class="cursor-pointer" icon="fa-brands fa-pinterest-p"/>
-        <font-awesome-icon class="cursor-pointer" icon="fa-brands fa-twitter"/>
         <font-awesome-icon class="cursor-pointer" icon="fa-brands fa-facebook-f"/>
+        <font-awesome-icon class="cursor-pointer" icon="fa-brands fa-twitter"/>
+        <font-awesome-icon class="cursor-pointer" icon="fa-brands fa-pinterest-p"/>
       </div>
     </div>
   </div>
